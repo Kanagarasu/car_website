@@ -1,0 +1,161 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: sticky;
+    top: 0px;
+    height: 40px;
+    width: 100%;
+    background-color:rgb(8, 8, 8);
+    z-index: 1;
+    /* z-index: 1; => is used to avoid the overflow in the particuler selected part */
+}
+
+nav{
+    
+    display: flex;
+    justify-content: start;
+    justify-content: space-between;
+    padding: 10px;
+    text-decoration: none;
+   
+    
+}
+.navs a{ 
+    margin: 10px; 
+    text-decoration: none; 
+    color: rgb(248, 245, 245);  
+}
+nav .home{
+    margin-left: 1%;
+    text-decoration: none;
+    color: rgb(251, 248, 248);
+}
+nav .home:hover{
+    color: red;
+}
+nav a:hover{
+    color: red;
+}
+.imgcontainer{
+    height: 700px;
+    width: 100%;
+    display: flex;
+    background-color: gray;
+    
+}
+.image{
+    height: 700px;
+    width: 100%;
+    position: relative;
+}
+.image img{
+    height: 700px;
+    width: 100%;
+    opacity: 0.4; 
+}
+.content1{
+    margin: 15% 45% 10% 20%;
+    padding: 10px;
+    color: black;
+    position: absolute;
+    font-size: 50;
+    display: flexbox;
+}
+.content1 h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+
+}
+.content1 a{
+    text-decoration: none;
+    color: rgb(0, 255, 21);
+    font-weight: bolder;
+}
+.content1 a div{
+    width: 15rem;
+    border: 2px solid rgb(55, 255, 0);
+    backdrop-filter: blur(2px);
+    border-radius: 25px;
+    padding: 10px 20px 10px 20px;
+    margin-top: 50px;
+}
+
+.foot{
+    color: white;
+    background-color:black;
+    font-size: 20px;
+}
+.foot div {
+    padding: 10px;
+}
+/* .searchbutton{
+    height: 30px;
+    width: 100px;
+    color: yellow;
+    background-color: black;
+    border: 2px solid rgb(242, 255, 0);
+    border-radius: 10px;
+    margin-left: 35%;
+}
+.searchbutton a{
+    text-decoration: none;
+    color: yellow;
+}
+.searchbutton:hover{
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+}
+
+.searchbutton:hover{
+    background-color:yellow;
+    border: 2px solid rgb(4, 4, 4);
+} */
+.videodiv{
+    height: 80vh;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+.videodiv video{
+    height: 90vh;
+    width: 90%;  
+}
+.videotext{
+    text-align: center;
+}
+.imgwithcon{
+    margin-top: 20px;
+    display: flex;
+    
+}
+.imgcon{
+    height: 300px;
+    width: 35%;
+    margin-top: 0px;
+    border-radius: 20px;
+    border: 2px solid rgb(9, 9, 9);
+    display: flex;
+    overflow: hidden;
+    transition: 1s;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.5);
+}
+.content{
+    height: 240px;
+    width: 70%;
+    border-radius: 20px;
+    padding: 30px;
+    overflow: auto;
+}
+.imgcon img{
+    transition: 1s;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+}
+.imgcon img:hover{
+    transition: 1s;
+    transform: scale(1.1);
+}
